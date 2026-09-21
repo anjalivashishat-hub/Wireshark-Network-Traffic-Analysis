@@ -31,6 +31,9 @@ Filter used: dns
 I examined: 
 -Source and Destination IP addresses 
 
+
+
+
 ### 2. TCP Traffic 
 
 Filter used: tcp
@@ -38,9 +41,20 @@ I examined:
 -TCP flags
 -TCP connection establishment
 
+
+
 ### 3. ARP traffic
 Filter used: arp
 ARP packets were analyzed to understand how devices discover the MAC address associated with an IP address on a local network.
+
+
+
+### 4. TLS Traffic
+*   **Source IP:** `[Insert Source IP]` (Client)
+*   **Destination IP:** `[Insert Destination IP]` (Server)
+*   **Destination Port:** `443` (HTTPS)
+*   **TLS Version:** TLSv1.2
+*   **Handshake Type:** `Client Hello` / `Server Hello`
 
 Key Findings
 -DNS traffic can reveal the domains being queried by a host.
